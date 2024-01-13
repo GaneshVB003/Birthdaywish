@@ -169,9 +169,60 @@
       birthdayWish.style.display = 'block';
     }
  
- 
+
  
  
   </script>
+  
+  <!-- Add this <audio> element within the <body> tag -->
+<audio id="birthdayMusic" src="Happy Birthday (Piano Version).mp3" loop></audio>
+
+<script>
+  function showBirthdayWish() {
+    const clickMeButton = document.querySelector('.click-me-button');
+    clickMeButton.style.display = 'none';
+
+    const birthdayWish = document.getElementById('birthdayWish');
+    birthdayWish.style.display = 'block';
+
+    // Play the birthday music
+    const birthdayMusic = document.getElementById('birthdayMusic');
+    birthdayMusic.play();
+  }
+</script>
+
+
+
+
+
+
+
+<style>
+  body {
+    /* existing styles */
+    background-image: url('path/to/initial-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<script>
+  function showBirthdayWish() {
+    const clickMeButton = document.querySelector('.click-me-button');
+    clickMeButton.style.display = 'none';
+
+    const birthdayWish = document.getElementById('birthdayWish');
+    birthdayWish.style.display = 'block';
+
+    // Change the background image
+    document.body.style.backgroundImage = "url('https://plus.unsplash.com/premium_photo-1677221924410-0d27f4940396?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
+  }
+</script>
+
+
+
+
+
 </body>
-</html>
+  </html>
+  
